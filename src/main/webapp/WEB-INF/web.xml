@@ -1,0 +1,41 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>AuthorServlet</servlet-name>
+  	<display-name>AuthorServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.st.servlets.AuthorServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Author</servlet-name>
+  	<display-name>Author</display-name>
+  	<description></description>
+  	<servlet-class>com.st.servlets.Author</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Result</servlet-name>
+  	<display-name>Result</display-name>
+  	<description></description>
+  	<servlet-class>com.st.servlets.Result</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AuthorServlet</servlet-name>
+  	<url-pattern>/AuthorServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Author</servlet-name>
+  	<url-pattern>/Author</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Author</servlet-name>
+  	<url-pattern>/Author/{authId}</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Result</servlet-name>
+  	<url-pattern>/Result</url-pattern>
+  </servlet-mapping>
+</web-app>
